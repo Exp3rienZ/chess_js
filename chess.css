@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(181, 207, 187);
+}
+
+.container {
+    width: 99vw;
+    height: 98vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.gameframe {
+    background-color: #c9c9c9;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 800px;
+    width: 800px;
+    border: 15px rgb(54, 54, 54) solid;
+    border-radius: 10px;
+    display: grid;
+}
+
+.white_field {
+    background-color: rgb(201, 201, 201);
+    width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.dark_field {
+    background-color: rgb(113, 156, 110);
+    width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.menu {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    height: 400px;
+    width: 300px;
+    background-color: #c9c9c9;
+    border: 10px rgb(54, 54, 54) solid;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    border: 5px rgb(149, 172, 143) solid;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.lengthCounter {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    margin: 0 auto;
+}
+
+.inputs {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.piece {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    cursor: -webkit-grab;
+}
+
+.piece:active {
+    cursor: -webkit-grabbing;
+}
+
+.piece .dragging {
+    cursor: -webkit-grabbing;
+}
+
+.possibleMove {
+    background-color: rgb(83, 83, 83);
+    border: 2px rgb(83, 83, 83) solid;
+    height: 35%;
+    width: 35%;
+    border-radius: 20px;
+    margin: 0% auto;
+    margin-top: 30%;
+    top: 50%;
+    opacity: 0.4;
+    cursor: grab;
+}
+
+.draggedOn {
+    filter: brightness(120%);
+}
+
+.invis {
+    visibility: hidden;
+}
+
+.dragging * {
+    cursor: grabbing !important;
+}
